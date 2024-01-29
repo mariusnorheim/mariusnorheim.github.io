@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Resume v1.0.0 (undefined)
-    * Copyright 2013-2023 undefined
+    * Copyright 2013-2024 undefined
     * Licensed under undefined (https://github.com/StartBootstrap/resume/blob/master/LICENSE)
     */
     (function ($) {
