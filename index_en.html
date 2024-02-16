@@ -280,7 +280,13 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>Besides my interest for computers, networks and technology, I also enjoy driving auto vehicles at race tracks and pilot a 600cc Kawasaki motorcycle during spring and autumn. I am enormously enthustiastic about Norwegian style of home cooking and Italian food, and an aspiring home cook in training</p>
-                    <p class="mb-0">Much of my spare time is spent on my biggest interests, to explore new technology within application development and cloud environment. My home network has several servers running cloud solutions from VMWare for provision and sharing of server resources, which makes for an ideal environment suited to exploring</p>
+                    <p class="mb-0">Alot of my spare time is spent on my biggest interests, to explore new technology within application development and cloud environment. My home network has several servers running cloud solutions from VMWare for provision and sharing of server resources, which makes for an ideal environment suited to exploring</p>
+                    <!-- Gallery container-->
+                    <div class="gallery">
+                        <!-- List of images-->
+                        <div class="thumbnail"><img class="img-thumbnail" src="assets/gallery/motorcycle.jpg" alt="Focused" data-toggle="modal" data-target="#imageModal" /></div>
+                        <div class="thumbnail"><img class="img-thumbnail" src="assets/gallery/raspberry-pi.jpg" alt="Raspberry Pi kubernetes cluster" data-toggle="modal" data-target="#imageModal" /></div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -288,20 +294,28 @@
             <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                            Microsoft Certified Professional
-                            <p class="mb-0"><img class="img-fluid mx-auto" src="assets/img/mcp.jpg" alt="Microsoft Certified Professional" /></p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                            CompTIA iNet+
-                            <p class="mb-0"><img class="img-fluid mx-auto" src="assets/img/inet.jpg" alt="CompTIA iNet+" /></p>
-                        </li>
-                    </ul>
+                    <!-- Gallery container-->
+                    <div class="gallery">
+                        <!-- List of images-->
+                        <div class="thumbnail"><img class="img-thumbnail" src="assets/gallery/mcp.jpg" alt="Microsoft Certified Professional" data-toggle="modal" data-target="#imageModal" /></div>
+                        <div class="thumbnail"><img class="img-thumbnail" src="assets/gallery/inet.jpg" alt="CompTIA iNet+" data-toggle="modal" data-target="#imageModal" /></div>
+                    </div>
                 </div>
             </section>
+            <!-- Bootstrap Modal-->
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Image</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                            <span aria-hidden="true">×</span>
+                        </div>
+                        <div class="modal-body"><img class="img-fluid" id="modalImage" src="" alt="" /></div>
+                        <div class="modal-footer"><button class="btn btn-dark" type="button" data-dismiss="modal">Close</button></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
