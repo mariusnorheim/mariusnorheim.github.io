@@ -10115,8 +10115,8 @@ section.resume-section .resume-section-content {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 15px;
   background-color: #7d7d7d;
   padding: 30px;
   border: 1px solid #343434;
@@ -10129,14 +10129,21 @@ section.resume-section .resume-section-content {
 
 /* Style for the thumbnails */
 .thumbnail {
-  flex: 0 0 calc(50% - 10px);
-  box-sizing: border-box;
   cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: calc(50% - 10px);
+  height: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transition for hover effects */
 }
 
 .thumbnail img {
+  border: 0;
+  background-color: #7d7d7d;
   width: 100%;
   height: auto;
 }
@@ -10144,9 +10151,7 @@ section.resume-section .resume-section-content {
 /* Hover effect on thumbnails */
 .thumbnail:hover {
   transform: scale(1.03);
-  /* Slightly enlarge thumbnails on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Increased shadow on hover */
 }
 
 #modalImage {
@@ -10164,7 +10169,8 @@ section.resume-section .resume-section-content {
 /* Responsive layout adjustments */
 @media (max-width: 600px) {
   .thumbnail {
-    flex: 0 0 100%;
+    width: 100%;
     /* Full width on smaller screens */
+    height: auto;
   }
 }
